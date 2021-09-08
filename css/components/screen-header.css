@@ -9,8 +9,20 @@
   font-size: 28px;
   font-weight: 600;
 }
+.screen-header__icons {
+  position: relative;
+}
 .screen-header__icons span {
   margin-left: 25px;
+}
+.cog-notification {
+  background-color: tomato;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  position: absolute;
+  right: -10px;
+  top: -3px;
 }
 
 @keyframes rotateCog {

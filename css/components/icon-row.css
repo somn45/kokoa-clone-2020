@@ -1,8 +1,11 @@
 .icons-row {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 25px;
+  padding: 0 25px 25px;
 }
+.icons-row--second-row {
+  width: 35%;
+}   /* 나중에 연구해보기 */
 .icons-row__icon {
   display: flex;
   flex-direction: column;
