@@ -1,0 +1,36 @@
+#login-form {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 30px;
+}#login-form input {
+  border: none;
+  margin-bottom: 25px;
+  padding: 10px 0;
+  font-size: 18px;
+}
+#login-form input:not([type="submit"]) {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  transition: border-color 0.3s ease-in-out;
+}
+#login-form input::placeholder {
+  color: rgba(0, 0, 0, 0.4);
+}
+input:focus {
+  outline: none;
+}
+#login-form input:focus {
+  border-color: var(--yellow);
+}
+
+#login-form input[type="submit"] {
+  background-color: var(--yellow);
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 20px 0;
+}
+#login-form a {
+  text-align: center;
+  color: inherit;
+  text-decoration: none;
+  font-size: 13px;
+}

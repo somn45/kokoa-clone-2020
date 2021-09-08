@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>More - Kokoa Clone</title>
+  <style>
+  /*
+    VScode 단축키
+    nav>ul>li*4>a
+  */
+  /*
+    content-box: margin, padding을 넣으면 그만큼 상자의 크기가 늘어난다
+    border-box: margin, padding을 넣어도 상자의 크기는 요구한 크기만큼 유지한다
+  */
+  </style>
+</head>
+<body>
+  <div class="status-bar">
+    <div class="status-bar__column"> <!-- BEM -->
+      <span>No Service</span>
+      <i class="fas fa-wifi"></i>
+    </div>
+    <div class="status-bar__column">
+      <span>18:43</span>
+    </div>
+    <div class="status-bar__column">
+      <span>110%</span>
+      <i class="fas fa-battery-full fa-lg"></i>
+      <i class="fas fa-bolt"></i>
+    </div>
+  </div>
+
+  <header class="screen-header">
+    <h1 class="screen-header__title">More</h1>
+    <div class="screen-header__icons">
+      <span><i class="fas fa-search fa-2x"></i></span>
+      <span><i class="fas fa-music fa-2x"></i></span>
+      <span><a href="settings.html"><i class="fas fa-cog fa-2x"></i></a></span>
+      <!-- 빨간점 만들기 -->
+    </div>
+  </header>
+
+  <main class="main-screen more-screen">
+    <div class="user-component">
+      <div class="user-component__column">
+        <img class="user-component__avatar user-component__avatar--xl" src="img/profile.jpg">
+        <div class="user-component__text">
+          <h4 class="user-component__title">박승주</h4>
+          <h6 class="user-component__subtitle">+1 787-493-219</h6> <!-- 느낌표 만들기 -->
+        </div>
+      </div>
+      <div class="user-component__column">
+        <i class="far fa-comment-alt fa-2x"></i>
+      </div>
+    </div>
+
+    <div class="icons-row">
+      <div class="icons-row__icon">
+        <i class="far fa-calendar-check"></i>
+        <span>Calendar</span></div>
+      <div class="icons-row__icon">
+        <i class="far fa-address-book"></i>
+        <span>Talk Drive</span></div>
+      <div class="icons-row__icon">
+        <i class="far fa-grin-alt"></i>
+        <span>Emoticons</span></div>
+      <div class="icons-row__icon">
+        <i class="fas fa-brush"></i>
+        <span>Themes</span></div>
+      <div class="icons-row__icon">
+        <i class="far fa-user-circle"></i>
+      <span>Account</span></div>
+      <div class="icons-row__icon">
+      <i class="far fa-comments"></i>
+      <span>Openchat</span></div>
+    </div>
+
+    <div class="more-suggestions">
+      <h4 class="more-suggestions__title">Suggestions</h4>
+      <div class="more-suggestions__icons">
+        <div class="more-suggestions__icon">
+          <div class="more-suggestions__icon-image">
+            <i class="fas fa-quote-right"></i>
+          </div>
+          <h4 class="more-suggestions__icon-text">Kokoa Story</h4>
+        </div>
+      </div>
+    </div>
+  </main>
+
+<nav class="nav">
+  <ul class="nav__list">
+    <li class="nav__btn"><a class="nav__a" href="friends.html"><i class="far fa-user fa-2x"></i></a></li>
+    <li><a class="nav__link" href="chats.html">
+      <span class="nav__notification"></span>
+      <i class="far fa-comment fa-2x"></i>
+    </a></li>
+    <li><a class="nav__link" href="find.html"><i class="fas fa-search fa-2x"></i></a></li>
+    <li><a class="nav__link" href="more.html">
+      <span class="nav__ellipsis_dot"></span>
+      <i class="fas fa-ellipsis-h fa-2x"></i>
+    </a></li>
+  </ul>
+</nav>
+
+  <script src="https://kit.fontawesome.com/118c8ed27f.js" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Welcome to Kokoa Talk</title>
+  <style>
+/* font rel: google font */
+/* google-extension: page ruler redux */
+/* google-extension: ColorZilla */
+
+/* Form의 중요 속성 
+    action: 어떤 페이지로 data를 보낼건지 지정
+    method: 
+      -post: ID, pwd와 같은 중요 데이터를 보낼 때
+      -get : 서버가 없을때 url를 통해 데이터를 보내는 방식, 보안에 취약함
+*/
+  </style>
+</head>
+<body>
+  <div class="status-bar">
+    <div class="status-bar__column"> <!-- BEM -->
+      <span>No Service</span>
+      <i class="fas fa-wifi"></i>
+    </div>
+    <div class="status-bar__column">
+      <span>18:43</span>
+    </div>
+    <div class="status-bar__column">
+      <span>110%</span>
+      <i class="fas fa-battery-full fa-lg"></i>
+      <i class="fas fa-bolt"></i>
+    </div>
+  </div>
+  <header class="welcome-header">
+    <h1 class="welcome-header__title">Welcome to Kokoa Clone!</h1>
+    <p class="welcome-header__text">If you havev a kokoa account, log in with your email or phone number.</p>
+  </header>
+
+  <form action="friends.html" method="get" id="login-form">
+    <input type="text" placeholder="Email or phone number" required>
+    <input type="password" placeholder="Password" required>
+    <input type="submit" value="Log In">
+    <a href="#">Find kokoa Account or Password</a>
+  </form>
+
+  <script src="https://kit.fontawesome.com/118c8ed27f.js" crossorigin="anonymous"></script>
+</body>
+</html>
